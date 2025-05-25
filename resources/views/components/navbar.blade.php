@@ -1,11 +1,11 @@
 <nav class="navbar">
-    <a href="/" class="text-xl font-bold">{{ env('APP_NAME') }}</a>
+    <a href="/" class="">{{ env('APP_NAME') }}</a>
     <div>
         @auth
             <span class="mr-4">{{ Auth::user()->email }}</span>
             <form method="POST" action="{{ route('logout') }}" class="inline">
                 @csrf
-                <button class="text-red-600 hover:underline">
+                <button class="">
                     <i class="fas fa-sign-out-alt"></i> Logout
                 </button>
             </form>
