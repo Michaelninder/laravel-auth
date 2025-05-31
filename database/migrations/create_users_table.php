@@ -17,7 +17,7 @@ return new class extends Migration
 	        $table->uuid('id')->primary();
 	        $table->string('email')->unique();
 	        $table->string('password')->nullable();
-	        $table->string('discord_id')->nullable()->unique();
+	        //$table->string('discord_id')->nullable()->unique();
 	        $table->boolean('is_admin')->default(false);
 	        $table->timestamps();
 	    });
