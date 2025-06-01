@@ -4,9 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
 // Home / Landing Page
+/*
 Route::get('/', function () {
     return view('pages.home'); 
 })->name('home');
+*/
+
+Route::view('/', 'pages.home')->name('home');
 
 // Auth Routes
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
